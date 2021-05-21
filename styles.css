@@ -1,0 +1,115 @@
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  text-align: center;
+  background-color: rgb(252, 238, 252);
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#line {
+  height: 3px;
+  width: 50px;
+  background-color: rgb(161, 125, 33);
+  margin: auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 3rem 0 0rem;
+  font-weight: bold;
+}
+#card-container {
+  max-width: 1300px;
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#buttons-container {
+  margin: 1.5rem;
+}
+
+.card {
+  background-color: whitesmoke;
+  /* padding: .5rem; */
+  border-radius: 10px;
+  display: flex;
+  max-width: 600px;
+  margin: 1rem;
+  box-shadow: 0 0 10px grey;
+  transition: all .3s ease-in-out;
+  overflow: hidden;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+  box-shadow: 0 0 20px grey;
+}
+
+img {
+  height: 150px;
+  width: 200px;
+  object-fit: cover ;
+  border: 3px rgb(202, 174, 103) solid;
+}
+
+.card-info {
+  padding: 0 .5rem;
+}
+
+h4 {
+  margin: 0;
+  padding-left: 1rem;
+  letter-spacing: .2rem;
+}
+
+.name-prise {
+  padding-top: .3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.desc {
+  padding: .2rem;
+  margin: .3rem;
+  text-align: left;
+}
+
+.prise {
+  font-weight: bold;
+  color: rgb(145, 111, 25);
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid rgb(145, 110, 22);
+  color: rgb(145, 110, 22);
+  border-radius: 5px;
+  cursor: pointer;
+  margin: .2rem;
+  font-size: 1.1rem;
+  transition: all .2s ease-in-out ;
+}
+
+.btn:hover, .active {
+  background-color: rgb(153, 135, 91);
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    flex-direction: column;
+  }
+  
+  img {
+    height: 300px;
+    width: auto;
+  }
+
+}
