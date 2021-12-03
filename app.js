@@ -112,11 +112,7 @@ function bildMenu(menu,id = "all") {
 }
         
 function capTitle(title) {
-    return title.
-    split(" ").
-    filter(a => a).
-    map(a => a[0].toUpperCase() + a.slice(1)).
-    join(" ");
+    return title.slice(0,1).toUpperCase() + title.slice(1)
 }
 
 bildMenu(menu);
